@@ -9,7 +9,7 @@ decode the BMS values of the 12V 300A (SP04S060-S-H V1.2) JBD BMS.
 
 """
 
-
+#Commands
 OVERALL_STATUS_COMMAND = 0x03
 CELL_VOLTAGE_COMMAND   = 0x04
 
@@ -24,7 +24,7 @@ def get_bms_data(command):
 import serial
 from time import sleep
 
-
+"""Read RS485 data from the BMS"""
 def read_jbd_rs485(COM_PORT):
     ser = serial.Serial("COM"+str(COM_PORT), baudrate=9600, timeout=1)
     
