@@ -8,14 +8,6 @@ pic-patt-rs485
            |_ JBD_RS485_4s300a.py
            |_requirements.txt 
 
-Connections 
-
-|---------|                    |------------------------|
-|         |_A_______________A_ |                        |  
-| JBD BMS |                    | RS485 to USB Converter | -----------> Computer 
-|         |_B_______________B_ |                        |
-|---------|                    |------------------------|
-
 Brief Explanation
 
 In the JBD_RS485_4s300a.py, there is a function called read_jbd_rs485 and takes the command as the parameter. There are several commands to manipulate and control the BMS but essentially, there are only two command required to get overall voltage, current, alarams, individual cell voltages and state-of-charge of the batteries. 
