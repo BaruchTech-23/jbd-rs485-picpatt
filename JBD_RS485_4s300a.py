@@ -21,8 +21,6 @@ def get_bms_data(command):
     return [0xDD, 0xA5, command, 0x00, h_byte, l_byte, 0x77]
 
 """Require headers"""
-import os
-import platform 
 import serial
 from time import sleep
 
