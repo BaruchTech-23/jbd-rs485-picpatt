@@ -22,7 +22,9 @@ How to use the module?
 
 Just import the read_jbd_rs485 from JBD_RS485_4s300a and read the values. The function returns a dictionary. Since the module already imported time and serial (pyserial), functions or classes associated with those modules and packages can be accessed through the JBD_RS485_4s300a module. Example usage 
 
-<pre> '''from JBD_RS485_4s300a import read_jbd_rs485
-print(read_jbd_rs485)'''</pre>
+<pre>
+from JBD_RS485_4s300a import read_jbd_rs485
+print(read_jbd_rs485
+</pre>
 
 It will return a dictionary to read and later utilise in automation. 
