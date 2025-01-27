@@ -4,6 +4,7 @@ This python module is to decode and read the RS485 data from the JBD BMS, exclus
 File structure 
 
 pic-patt-rs485
+
            |_ main.py
            |_ JBD_RS485_4s300a.py
            |_requirements.txt 
