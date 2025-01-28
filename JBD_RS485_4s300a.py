@@ -5,7 +5,7 @@ Date: 27/1/2025
 Version: 1.0
 Developer: Min T. Zan
 Description: This is a Python script to read and
-decode the BMS values of the 12V 300A (SP04S060-S-H V1.2) JBD BMS. 
+decode the BMS values of the 12V 300A (SP04S060-S-H V2.1) JBD BMS. 
 
 """
 
