@@ -26,13 +26,13 @@ Command code 0x03 is to get the overall status and information of the batteries,
 
 **How to use the module?**
 
-Just import the read_jbd_rs485 from JBD_RS485_4s300a and read the values. The function returns a dictionary. Since the module already imported time and serial (pyserial), functions or classes associated with those modules and packages can be accessed through the JBD_RS485_4s300a module. Example usage 
+Just import the read_jbd_rs485 from JBD_RS485_4s300a and read the values. The function returns a dictionary. Since the module already imported time and serial (pyserial), functions or classes associated with those modules and packages can be accessed through the JBD_RS485_4s300a module. Example usage that read RS485 data from COM6.
 
 <pre>
 from JBD_RS485_4s300a import read_jbd_rs485
-print(read_jbd_rs485())
+print(read_jbd_rs485(6))
 </pre>
 
-It will return a dictionary to read as follows and later can be utilised in automation. 
+It will return a dictionary to read as follow and later can be utilised in automation. 
 
 ![result](https://github.com/user-attachments/assets/8abf0042-a6ce-4073-8f71-be2da25a1529)
