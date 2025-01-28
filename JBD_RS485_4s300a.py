@@ -13,18 +13,21 @@ decode the BMS values of the 12V 300A (SP04S060-S-H V1.2) JBD BMS.
 OVERALL_STATUS_COMMAND = 0x03
 CELL_VOLTAGE_COMMAND   = 0x04
 
+#Checksum calculation 
+calculateCRC = lambda command: [(((~command & 0xFFFF)+1) >> 8) & 0xFF,
+                                    ((~command & 0xFFFF)+1) & 0xFF]
 def get_bms_data(command):
     """ Function to get the bms data """
-    calculateCRC = lambda command: [(((~command & 0xFFFF)+1) >> 8) & 0xFF,
-                                    ((~command & 0xFFFF)+1) & 0xFF]
     h_byte, l_byte = calculateCRC(command)
     return [0xDD, 0xA5, command, 0x00, h_byte, l_byte, 0x77]
 
 """Require headers"""
+
 import serial
 from time import sleep
 
 """Read RS485 data from the BMS"""
+
 def read_jbd_rs485(COM_PORT):
     ser = serial.Serial("COM"+str(COM_PORT), baudrate=9600, timeout=1)
     
