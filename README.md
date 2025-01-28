@@ -27,7 +27,9 @@ Just import the read_jbd_rs485 from JBD_RS485_4s300a and read the values. The fu
 
 <pre>
 from JBD_RS485_4s300a import read_jbd_rs485
-print(read_jbd_rs485
+print(read_jbd_rs485())
 </pre>
 
-It will return a dictionary to read and later utilise in automation. 
+It will return a dictionary to read as follows and later can be utilised in automation. 
+
+![result](https://github.com/user-attachments/assets/8abf0042-a6ce-4073-8f71-be2da25a1529)
